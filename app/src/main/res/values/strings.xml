@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KitBox</string>
+    <string name="newspaper_theme_activator">Newspaper Theme Activator</string>
+
+    <string name="congratulation">!!! CONGRATULATION !!!</string>
+    <string name="watch_video_and_earn">Watch video and earn more points.</string>
+    <string name="get_more_coins">Get more coins</string>
+    <string name="earn_coin">Earn Coin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_deawer_open">open</string>
+    <string name="navigation_deawer_close">close</string>
+</resources>

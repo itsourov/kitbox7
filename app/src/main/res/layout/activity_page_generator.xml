@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_white_little_black"
+    tools:context=".PageGenerator">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOnPageGenerator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+    <TextView
+        android:id="@+id/pageTitleOnPageGenerator"
+        android:fontFamily="@font/carter_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Privacy Policy Generator"
+        android:textAlignment="center"
+        android:textColor="#FF7700"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#35C4E8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/acme"
+                android:padding="5dp"
+                android:text="This Activation will cost you 10 point. You can always earn more points by watching ads"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pointContainerOnPageGenerator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/userImageOnDash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userImageOnDash">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FBFBFB"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/coin" />
+
+                    <TextView
+                        android:id="@+id/pointTxtOnPageGenerator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Points: 20"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Enter Site name:"
+        android:textColor="@color/black_green"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:labelFor="@+id/siteNameInputOnPageGenerator"/>
+
+    <EditText
+        android:id="@+id/siteNameInputOnPageGenerator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/edit_text_background"
+        android:elevation="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black_white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Site url:"
+        android:textColor="@color/black_green"
+        android:labelFor="@+id/siteUrlInputOnPageGenerator"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/siteUrlInputOnPageGenerator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/edit_text_background"
+        android:elevation="6dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:padding="10dp"
+           android:textColor="@color/black_white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Email adsess:"
+        android:textColor="@color/black_green"
+        android:labelFor="@+id/adminEmailInputOnPageGenerator"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/adminEmailInputOnPageGenerator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/edit_text_background"
+        android:elevation="6dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+           android:textColor="@color/black_white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/generateCodeBtnOnPageGenerator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="Generate"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/pink_green"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:padding="10dp"
+        android:textColor="@color/white_black" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="16dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="true"
+                android:layout_margin="10dp"
+                android:id="@+id/myCodeOnPageGenerator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:background="@null"
+                android:textColorHighlight="#03A9F4" />
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/copyCodeBtnOnPageGenerator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="copy"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/pink_green"
+        android:padding="10dp"
+        android:textColor="@color/white_black" />
+    </LinearLayout>
+</ScrollView>

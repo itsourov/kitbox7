@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThumbDownloader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarOnNewspaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+        <TextView
+            android:id="@+id/pageTitleOnPageGenerator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:fontFamily="@font/carter_one"
+            android:text="Youtube Thumbnail Downloader"
+            android:textAlignment="center"
+            android:textColor="#FF7700"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:labelFor="@+id/urlInputOnTD"
+            android:text="Enter Video Url:"
+            android:textColor="@color/black_green"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/urlInputOnTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="@color/edit_text_background"
+            android:elevation="6dp"
+            android:ems="10"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black_white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonOnTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="@color/pink_green"
+            android:text="Button"
+            android:textColor="@color/white_black" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/thumbImage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/best_blogging_tools" />
+
+            <Button
+                android:id="@+id/downloadThumb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:backgroundTint="#45FB5C"
+                android:drawableStart="@drawable/ic_baseline_cloud_download_24"
+                android:drawablePadding="10dp"
+                android:text="Download" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/thumbImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/best_blogging_tools" />
+
+            <Button
+                android:id="@+id/downloadThumb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:backgroundTint="@color/pink_green"
+                android:drawableStart="@drawable/ic_baseline_cloud_download_24"
+                android:drawablePadding="10dp"
+                android:text="Download" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/thumbImage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/best_blogging_tools" />
+
+            <Button
+                android:id="@+id/downloadThumb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:backgroundTint="@color/pink_green"
+                android:drawableStart="@drawable/ic_baseline_cloud_download_24"
+                android:drawablePadding="10dp"
+                android:text="Download" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

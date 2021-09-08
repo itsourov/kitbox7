@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_white_little_black"
+    tools:context=".NewspaperActivator">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarOnNewspaper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt1OnNA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/carter_one"
+                android:text="@string/newspaper_theme_activator"
+                android:textAlignment="center"
+                android:textColor="@color/pink_green"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbarOnNewspaper" />
+
+            <LinearLayout
+                android:elevation="4dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#35C4E8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1OnNA">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/acme"
+                    android:padding="5dp"
+                    android:text="This Activation will cost you 20 point. You can always earn more points by watching ads"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pointContainerOnNewspaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userImageOnDash"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/userImageOnDash">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FBFBFB"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/coin" />
+
+                        <TextView
+                            android:id="@+id/pointTxtOnNewspaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="Points: 20"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_bg"
+                android:backgroundTint="#E85D5D"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="This require a valid internet Connection"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <EditText
+                android:id="@+id/serverIdOnNA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="@null"
+                android:background="@drawable/round_bg"
+                android:backgroundTint="@color/edit_text_background"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Enter server ID"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/generateButtonOnNA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_bg"
+                android:backgroundTint="#0073FF"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Generate"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/serverIdOnNA"
+                app:layout_constraintStart_toStartOf="@+id/serverIdOnNA"
+                app:layout_constraintTop_toBottomOf="@+id/serverIdOnNA" />
+
+            <LinearLayout
+                android:id="@+id/containerOnNA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/generateButtonOnNA">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/purchaseCodeOnNA"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="16dp"
+                    android:text="ENVATO PURCHASE CODE:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_bg"
+                    android:backgroundTint="@color/edit_text_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/purchaseCodeOnNA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp"
+                        android:selectAllOnFocus="true" />
+
+                    <ImageButton
+                        android:id="@+id/copyBtn1OnNA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/edit_text_background"
+                        app:srcCompat="@drawable/ic_baseline_content_copy_24" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@id/activationKeyOnNA"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="16dp"
+                    android:text="TAGDIV ACTIVATION KEY:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_bg"
+                    android:backgroundTint="@color/edit_text_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:selectAllOnFocus="true"
+                        android:id="@+id/activationKeyOnNA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="0dp" />
+
+                    <ImageButton
+                        android:id="@+id/copyBtn2OnNA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/edit_text_background"
+                        app:srcCompat="@drawable/ic_baseline_content_copy_24" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/shareImgOnNA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:srcCompat="@drawable/share" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

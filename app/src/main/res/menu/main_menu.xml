@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/newspaperActivatorMenu"
+            android:icon="@drawable/theme"
+            android:title="Newspaper 11 Tool" />
+
+        <item
+            android:id="@+id/wordpressThemeMenu"
+            android:icon="@drawable/wordpress"
+            android:title="Wordpress theme download" />
+        <item
+            android:id="@+id/wordpressPluginMenu"
+            android:icon="@drawable/wordpress"
+            android:title="Wordpress plugin download" />
+        <item
+            android:id="@+id/bloggerThemeMenu"
+            android:icon="@drawable/blogger"
+            android:title="Blogger Theme download" />
+
+
+    </group>
+
+    <item android:title="Page Generator">
+        <menu android:checkableBehavior="single">
+            <group >
+                <item
+                    android:id="@+id/ppgMenu"
+                    android:icon="@drawable/page_privacy_policy"
+                    android:title="Privacy Policy Generator"/>
+
+                <item
+                    android:id="@+id/tacMenu"
+                    android:icon="@drawable/page_terms_and_conditions"
+                    android:title="Terms and Conditions Generator "/>
+                <item
+                    android:id="@+id/disclaimerMenu"
+                    android:icon="@drawable/page_disclaimer"
+                    android:title="Disclaimer Generator "/>
+                <item
+                    android:id="@+id/dmcaMenu"
+                    android:icon="@drawable/page_dmca"
+                    android:title="DMCA Generator"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="More">
+        <menu android:checkableBehavior="single">
+            <group >
+                <item
+                    android:id="@+id/aboutDeveloper"
+                    android:icon="@drawable/developer"
+                    android:title="About Dev" />
+
+                <item
+                    android:id="@+id/ContactMenu"
+                    android:icon="@drawable/contact"
+                    android:title="Contact us" />
+
+                <item
+                    android:id="@+id/log_out_menu"
+                    android:icon="@drawable/theme"
+                    android:title="Log Out" />
+
+
+            </group>
+        </menu>
+    </item>
+</menu>
