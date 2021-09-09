@@ -13,7 +13,7 @@
 
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarOnNewspaper"
+            android:id="@+id/toolbarOnYTD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
@@ -68,7 +68,7 @@
             android:layout_margin="15dp"
             android:background="@drawable/round_bg"
             android:backgroundTint="@color/pink_green"
-            android:text="Button"
+            android:text="Get Thumbnail"
             android:textColor="@color/white_black" />
 
         <androidx.cardview.widget.CardView
@@ -82,8 +82,7 @@
                 android:id="@+id/thumbImage1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/best_blogging_tools" />
+                android:adjustViewBounds="true" />
 
             <Button
                 android:id="@+id/downloadThumb1"
@@ -107,8 +106,7 @@
                 android:id="@+id/thumbImage2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/best_blogging_tools" />
+                android:adjustViewBounds="true"/>
 
             <Button
                 android:id="@+id/downloadThumb2"
@@ -133,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/best_blogging_tools" />
+                />
 
             <Button
                 android:id="@+id/downloadThumb3"

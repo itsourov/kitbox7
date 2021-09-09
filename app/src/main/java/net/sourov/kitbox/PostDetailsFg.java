@@ -48,7 +48,7 @@ public class PostDetailsFg extends Fragment {
 
         Glide.with(getContext())
                 .load(imageLink)
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.loading).error(R.drawable.image_not_found)
                 .into(imageViewOnPostDetails);
 
         view.findViewById(R.id.downloadBtnOnPD).setOnClickListener(new View.OnClickListener() {

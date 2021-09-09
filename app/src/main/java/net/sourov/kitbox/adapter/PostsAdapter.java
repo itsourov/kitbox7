@@ -52,7 +52,7 @@ public class PostsAdapter extends   RecyclerView.Adapter<PostsAdapter.PostHolder
         Glide.with(context)
                 .load(postsModel.getImageLink())
                 .centerCrop()
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.loading).error(R.drawable.image_not_found)
                 .into(holder.imageOnSPD);
         holder.SDPContainer.setOnClickListener(view -> {
             Bundle bundle = new Bundle();
